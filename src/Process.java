@@ -46,7 +46,7 @@ public class Process {
     }
 
     public String printProcess() {
-        return  "<" + this.processID + ">," + "<" + this.arrivalTime + ">," +
+        return  "<P" + this.processID + ">," + "<" + this.arrivalTime + ">," +
                 "<" + this.priority + ">," + "<" + this.cpuBurst + ">";
     }
 }

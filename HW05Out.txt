@@ -1,0 +1,75 @@
+####################################################################################
+#                                                                                  #
+#                      CS3600 - HW05 - Scheduling Algorithms                       #
+#                          Author: Austin Gailey                                   #
+#                             Date: 4 Oct 2019                                     #
+#                                                                                  #
+####################################################################################
+
+----------------Processes Read From File:---------------------------
+<P1>,<0>,<4>,<14>
+<P2>,<0>,<3>,<65>
+<P3>,<0>,<3>,<22>
+<P4>,<30>,<1>,<50>
+<P5>,<3>,<5>,<13>
+<P6>,<5>,<6>,<32>
+<P7>,<5>,<7>,<10>
+<P8>,<6>,<2>,<20>
+-----------------End of Processes Read From File--------------------
+
+------Scheduling results of Non Preemptive Shortest Job First-------
+At time 0ms,  CPU starts running process 1
+At time 14ms, CPU starts running process 7
+At time 24ms, CPU starts running process 5
+At time 37ms, CPU starts running process 8
+At time 57ms, CPU starts running process 3
+At time 79ms, CPU starts running process 6
+At time 111ms, CPU starts running process 4
+At time 161ms, CPU starts running process 2
+-------End of the results of Non Preemptive Shortest Job First------
+
+--------Scheduling results of Priority Scheduling-------------------
+At time 0ms,  CPU starts running process 1
+At time 14ms, CPU starts running process 7
+At time 24ms, CPU starts running process 6
+At time 56ms, CPU starts running process 5
+At time 69ms, CPU starts running process 2
+At time 134ms, CPU starts running process 3
+At time 156ms, CPU starts running process 8
+At time 176ms, CPU starts running process 4
+------End of the results of Priority Scheduling------
+
+--------Scheduling results of Round Robin---------------------------
+At time 0ms,  CPU starts running process 1
+At time 10ms, CPU starts running process 2
+At time 20ms, CPU starts running process 3
+At time 30ms, CPU starts running process 5
+At time 40ms, CPU starts running process 6
+At time 50ms, CPU starts running process 7
+---At time 60ms, CPU finished process 7---
+At time 60ms, CPU starts running process 8
+At time 70ms, CPU starts running process 4
+At time 80ms, CPU starts running process 1
+---At time 84ms, CPU finished process 1---
+At time 90ms, CPU starts running process 3
+At time 100ms, CPU starts running process 5
+---At time 103ms, CPU finished process 5---
+---At time 105ms, CPU finished process 3---
+At time 110ms, CPU starts running process 6
+At time 120ms, CPU starts running process 8
+---At time 130ms, CPU finished process 8---
+At time 130ms, CPU starts running process 4
+At time 140ms, CPU starts running process 2
+At time 150ms, CPU starts running process 6
+At time 160ms, CPU starts running process 4
+At time 170ms, CPU starts running process 2
+At time 180ms, CPU starts running process 6
+---At time 182ms, CPU finished process 6---
+At time 190ms, CPU starts running process 4
+At time 200ms, CPU starts running process 2
+At time 210ms, CPU starts running process 4
+---At time 220ms, CPU finished process 4---
+At time 220ms, CPU starts running process 2
+---At time 226ms, CPU finished process 2---
+------End of the results of Round Robin Scheduling------------------
+
